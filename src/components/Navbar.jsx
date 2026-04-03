@@ -36,7 +36,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-primary text-sm font-normal">Schedule A Meeting <FaArrowRight /></a>
+                <a className="btn btn-primary text-sm font-bold">Schedule A Meeting <FaArrowRight /></a>
             </div>
         </div>
     );

@@ -1,8 +1,10 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import GettingStarted from "@/components/GettingStarted";
 import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
 import Tools from "@/components/Tools";
+import WhyChooseUS from "@/components/WhyChooseUS";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
       <Services></Services>
       <Pricing></Pricing>
       <Tools></Tools>
+      <GettingStarted></GettingStarted>
+      <WhyChooseUS></WhyChooseUS>
     </div>
   );
 }
