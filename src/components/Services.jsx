@@ -20,11 +20,11 @@ const Services = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
                 {
-                    services.map((service, index) => <div key={index} className='border rounded-lg p-5 flex flex-col items-center gap-4'>
+                    services.map((service, index) => <div key={index} className='border rounded-lg p-5 flex flex-col gap-4'>
                         <Image src={service.image} alt={service.name} width={100} height={100} />
                         <h2 className='text-lg font-semibold'>{service.name}</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <button>Read More</button>
+                        <button className='w-fit'>Read More</button>
                     </div>)
                 }
             </div>
