@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Banner from "@/components/Banner";
 import GettingStarted from "@/components/GettingStarted";
 import Pricing from "@/components/Pricing";
+import Review from "@/components/Review";
 import Services from "@/components/Services";
 import Tools from "@/components/Tools";
 import WhyChooseUS from "@/components/WhyChooseUS";
@@ -17,6 +18,7 @@ export default function Home() {
       <Tools></Tools>
       <GettingStarted></GettingStarted>
       <WhyChooseUS></WhyChooseUS>
+      <Review></Review>
     </div>
   );
 }
