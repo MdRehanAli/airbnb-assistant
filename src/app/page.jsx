@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import FAQ from "@/components/FAQ";
 import GettingStarted from "@/components/GettingStarted";
 import Pricing from "@/components/Pricing";
 import Questions from "@/components/Questions";
@@ -20,6 +21,7 @@ export default function Home() {
       <GettingStarted></GettingStarted>
       <WhyChooseUS></WhyChooseUS>
       <Review></Review>
+      <FAQ></FAQ>
       <Questions></Questions>
     </div>
   );

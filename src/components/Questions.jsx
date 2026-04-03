@@ -33,7 +33,7 @@ const Questions = () => {
                 </div>
 
                 <div className="space-y-2 mb-8">
-                    <h2 className="text-xl font-bold text-[#101828]">
+                    <h2 className="text-xl font-bold">
                         Still have Questions?
                     </h2>
                     <p className="text-gray-500">
