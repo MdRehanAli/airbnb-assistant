@@ -66,7 +66,7 @@ const Pricing = () => {
                 </div>
             </div>
 
-            <div className="py-20 bg-gray-100">
+            <div className="pt-22">
                 <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
                     {plans.map((plan, index) => (
                         <div
