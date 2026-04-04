@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, X } from "lucide-react";
+import Image from 'next/image';
 
 const Pricing = () => {
 
@@ -55,14 +56,18 @@ const Pricing = () => {
     ];
 
     return (
-        <section className='mt-12.5 mb-18'>
-            <div>
-                <h1 className='text-center text-[32px] font-bold'>Airnbn Assistent <span className='text-primary'>pricing</span></h1>
+        <section className='mt-12.5 mb-18' id='pricing'>
+            <div className='relative'>
+                <h1 className='text-center text-[32px] font-bold'>Airbnb Assistant <span className='text-primary'>pricing</span></h1>
                 <p className='text-center md:max-w-175 text-xl mx-auto mt-4 mb-8 text-[#191d23]'>Choose a plan that’s right for you</p>
                 <div className='flex items-center gap-5 justify-center text-[#191d23]'>
                     <p>Pay Monthly </p>
                     <input type="checkbox" className="toggle bg-[#04092152] border-none text-white" />
                     <p>Pay Yearly</p>
+                </div>
+                <div className='flex items-end absolute md:right-[30%] right-[12%] md:top-[80%] top-[90%]'>
+                    <Image src="/assets/Arrow.png" alt="Pricing" width={100} height={100} className='' />
+                    <p className='text-primary mb-3'>Save 25%</p>
                 </div>
             </div>
 
@@ -71,8 +76,8 @@ const Pricing = () => {
                     {plans.map((plan, index) => (
                         <div
                             key={index}
-                            className={`rounded-xl border border-[#FAC4D2] p-8 ${plan.highlight
-                                ? "bg-primary text-white border-primary scale-105"
+                            className={`rounded-[10px] border border-[#FAC4D2] py-8 px-6 manrope-font ${plan.highlight
+                                ? "bg-primary text-white border-primary"
                                 : "bg-white"
                                 }`}
                         >
@@ -85,7 +90,7 @@ const Pricing = () => {
                                 {plan.desc}
                             </p>
 
-                            <div className="flex items-end gap-2 mb-6">
+                            <div className="flex items-center gap-2 mb-6">
                                 <span className="text-4xl font-bold">{plan.price}</span>
                                 <span
                                     className={`text-sm ${plan.highlight ? "text-white/80" : "text-gray-500"
@@ -108,9 +113,13 @@ const Pricing = () => {
                                 {plan.features.map((feature, i) => (
                                     <li key={i} className="flex items-center gap-3 text-sm">
                                         {feature.available ? (
-                                            <Check className="text-primary w-4 h-4" />
+                                            <div className=' bg-[#FAC4D2] p-1 rounded-full'>
+                                                <Check className="text-primary w-4 h-4" />
+                                            </div>
                                         ) : (
-                                            <X className="text-gray-400 w-4 h-4" />
+                                            <div className=' bg-[#f7f8f9] text-[#4b5768] p-1 rounded-full'>
+                                                <X className=" w-4 h-4" />
+                                            </div>
                                         )}
                                         <span
                                             className={

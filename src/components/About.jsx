@@ -18,7 +18,7 @@ const About = () => {
     ]
 
     return (
-        <section className='mt-12.5 mb-14'>
+        <section className='mt-12.5 mb-14' id='about'>
             <h1 className='text-center text-xl font-semibold'>Trusted by leaders in 50+ industries</h1>
 
             <Marquee className='flex gap-5 items-center justify-between bg-[#f6f6f6] mt-9 py-5' speed={50} direction="left" pauseOnHover={true}>

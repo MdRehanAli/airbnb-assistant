@@ -16,17 +16,19 @@ const Tools = () => {
     ]
 
     return (
-        <section>
-            <div>
+        <section className=''>
+            <div className='max-w-7xl mx-auto w-11/12'>
                 <h1 className='text-center text-[32px] font-bold'>Our <span className='text-primary'>Tools</span></h1>
-                <p className='text-center md:max-w-175 text-sm mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p className='text-center md:max-w-175 text-sm mx-auto mt-6 mb-34'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8.5 gap-y-10'>
-                {tools.map((tool, index) => (
-                    <div key={index} className=' rounded-lg p-5 flex flex-col gap-4'>
-                        <Image src={tool.image} alt={tool.name} width={150} height={100} />
-                    </div>
-                ))}
+            <div className='bg-[#f6f6f6]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8.5 gap-y-10 max-w-6xl mx-auto w-11/12 pt-9.5 pb-21'>
+                    {tools.map((tool, index) => (
+                        <div key={index} className=' rounded-lg flex flex-col items-center justify-center gap-4 p-12 bg-white hover:shadow-[0px_4px_30.3px_rgba(255,138,168,0.28)]'>
+                            <Image src={tool.image} alt={tool.name} width={150} height={100}/>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

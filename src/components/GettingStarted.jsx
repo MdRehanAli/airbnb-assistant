@@ -23,13 +23,13 @@ const GettingStarted = () => {
     ];
 
     return (
-        <section className='max-w-237 mx-auto'>
+        <section className='max-w-237 mx-auto w-11/12 mt-16 mb-20'>
             <div>
                 <h1 className='text-center text-[32px] font-bold'>Getting Started is <span className='text-primary'>Easy</span></h1>
-                <p className='text-center md:max-w-175 text-sm mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p className='text-center md:max-w-175 text-sm mx-auto mt-5.5 mb-15'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-10 mt-15">
+            <div className="grid md:grid-cols-3 gap-10">
                 {steps.map((step, index) => (
                     <div key={index} className="relative">
                         <div className="absolute left-3/7 -top-1/10 md:-top-6 md:-left-6 w-12 h-12 flex items-center justify-center border-4 border-primary rounded-full bg-white text-3xl p-8">
@@ -45,7 +45,7 @@ const GettingStarted = () => {
                                 />
                             </div>
                         </div>
-                        <p className="font-semibold mt-9 text-xl text-center">
+                        <p className="font-semibold mt-8.25 text-xl text-center">
                             {step.title}
                         </p>
                     </div>

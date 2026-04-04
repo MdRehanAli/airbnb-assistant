@@ -2,6 +2,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaCircleMinus, FaCirclePlus } from 'react-icons/fa6';
 import React, { useState } from 'react';
+import { CiCircleMinus, CiCirclePlus } from 'react-icons/ci';
 const faqData = [
     {
         question: "Is there a free trial available?",
@@ -32,13 +33,13 @@ const faqData = [
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(0);
     return (
-        <section className='bg-[#f9fafb] mx-auto max-w-7xl w-11/12'>
+        <section id='resources' className='bg-[#f9fafb] mx-auto max-w-7xl w-11/12 rounded-2xl mt-45 mb-5 p-18.5'>
             <div>
                 <h1 className='text-center text-[32px] font-bold'>Frequently asked <span className='text-primary'>questions</span></h1>
-                <p className='text-center md:max-w-175 text-sm mx-auto'>Everything you need to know about the product and billing.</p>
+                <p className='text-center md:max-w-175 text-xl mx-auto mt-5 font-normal'>Everything you need to know about the product and billing.</p>
             </div>
 
-            <section className="max-w-4xl mx-auto py-16 px-6">
+            <div className="max-w-4xl mx-auto mt-20">
                 <div className="divide-y divide-[#f8becd]">
                     {faqData.map((faq, index) => (
                         <div key={index} className="py-6">
@@ -46,14 +47,14 @@ const FAQ = () => {
                                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                                 className="w-full flex items-center justify-between text-left group"
                             >
-                                <span className="text-lg font-bold text-[#101828] group-hover:text-gray-600 transition-colors">
+                                <span className="text-lg font-bold ">
                                     {faq.question}
                                 </span>
-                                <span className="text-[#f2416b] text-2xl shrink-0 ml-4">
+                                <span className=" rounded-full text-2xl shrink-0 ml-4">
                                     {openIndex === index ? (
-                                        <FaCircleMinus />
+                                        <CiCircleMinus className='text-primary'/>
                                     ) : (
-                                        <FaCirclePlus className="opacity-80 group-hover:opacity-100" />
+                                        <CiCirclePlus className="text-primary" />
                                     )}
                                 </span>
                             </button>
@@ -75,9 +76,8 @@ const FAQ = () => {
                             </AnimatePresence>
                         </div>
                     ))}
-                    <div className="border-t border-[#f8becd]" />
                 </div>
-            </section>
+            </div>
         </section>
     );
 };
