@@ -45,17 +45,17 @@ https://www.figma.com/design/UM1FKXjlkAmDh4q11Yu6AM/OLW-Web-Dev-Hiring-Task
 
 ## ⚙️ Installation & Setup
 
-# Clone the repository:
+### Clone the repository:
 git clone https://github.com/MdRehanAli/airbnb-assistant.git
 
-# Navigate to the project directory:
+### Navigate to the project directory:
 cd airbnb-assistant
 
-# Install dependencies:
+### Install dependencies:
 npm install
 
-# Run the development server:
+### Run the development server:
 npm run dev
 
-# Open in browser:
+### Open in browser:
 http://localhost:3000
